@@ -11,40 +11,51 @@ import typing from "../assets/typing.jpg";
 const projects = [
      {
     title: "Kaun Banega Crorepati",
-    tech: "javascript",
+    tech:  ["HTML", "CSS", "JavaScript"],
     description: "A quiz game based on the popular TV show.",
     image: kbc,
-    link: "https://github.com/shubh-akodia/kaun_banega_crorepati"
+    github: "https://github.com/shubh-akodia/kaun_banega_crorepati",
+    live:"https://shubh-akodia.github.io/kaun_banega_crorepati/"
   },
   {
     title: "EMI Calculator",
-    tech: "javascript",
+    tech:  ["HTML", "CSS", "JavaScript"],
     description: "Calculates monthly EMI for loans.",
-    image: emi
+    image: emi,
+    github: "https://github.com/shubh-akodia/emi",
+    live:"https://shubh-akodia.github.io/emi/"
   },
     {
-        title: "Employee salary ",
-        tech: "javascript",
+        title: "Employee Salary Manager",
+        tech:  ["HTML", "CSS", "JavaScript"],
         description: "A system to manage employee salaries and generate payslips.",
-        image: salary
+        image: salary,
+        github: "https://github.com/shubh-akodia/employee_salary",
+        live:"https://shubh-akodia.github.io/employee_salary/"
     },
     {
         title: "Exam sheet",
-        tech: "javascript",
+        tech:  ["HTML", "CSS", "JavaScript"],
         description: "A simple exam sheet application including quiz and result.",
-        image: exam
+        image: exam,
+        live:"https://shubh-akodia.github.io/exam_sheet/",
+        github: "https://github.com/shubh-akodia/exam_sheet"
     },
     {
         title: "Typing speed test",
-        tech: "javascript",
+        tech:  ["HTML", "CSS", "JavaScript"],
         description: "A typing speed test application to measure typing speed and accuracy.",
-        image: typing
+        image: typing,
+        live:"https://shubh-akodia.github.io/typing_speed/",
+        github: "https://github.com/shubh-akodia/typing_speed"
     },
      {
         title: "recharge app",
-        tech: "javascript",
+        tech:  ["HTML", "CSS", "JavaScript"],
         description: "A simple recharge application for mobile services.",
-        image: recharge         
+        image: recharge,
+        live:"https://shubh-akodia.github.io/recharge-/",
+        github: "https://github.com/shubh-akodia/recharge-"         
     },
      
 ];
@@ -69,9 +80,9 @@ function Projects() {
 
       {selectedProject && (
         <ProjectModal
-          project={selectedProject}
-          closeModal={() => setSelectedProject(null)}
-        />
+  project={selectedProject}
+  onClose={() => setSelectedProject(null)}
+/>
       )}
     </section>
   );

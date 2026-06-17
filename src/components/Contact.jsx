@@ -48,6 +48,13 @@ function Contact() {
           onChange={handleChange}
           required
         />
+        <input
+          type="number"
+          name="contactNo"
+          placeholder="Contact Number"
+          value={formData.contactNo}
+          onChange={handleChange}
+        />
 
         <textarea
           name="message"
